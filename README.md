@@ -34,12 +34,14 @@ Here are some of the project's best features:
 
 ## 💻 Built with
 
-Technologies used in the project:
-
+### Technologies used in the project:
+For android app:
 * Android Studio
 * Java
 * Figma
+* ngrok
+
+For generative model:
 * Python
 * Flask
 * Anaconda
-* ngrok
