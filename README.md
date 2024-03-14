@@ -17,12 +17,7 @@
 | ![Screenshot 1](https://raw.githubusercontent.com/Debojit-mitra/async.ai/master/Screenshots/1.jpg) | ![Screenshot 2](https://raw.githubusercontent.com/Debojit-mitra/async.ai/master/Screenshots/2.jpg) |
 | ![Screenshot 3](https://raw.githubusercontent.com/Debojit-mitra/async.ai/master/Screenshots/3.jpg) | ![Screenshot 4](https://raw.githubusercontent.com/Debojit-mitra/async.ai/master/Screenshots/4.jpg) |
 | ![Screenshot 5](https://raw.githubusercontent.com/Debojit-mitra/async.ai/master/Screenshots/5.jpg) | ![Screenshot 6](https://raw.githubusercontent.com/Debojit-mitra/async.ai/master/Screenshots/6.jpg) |
-| ![Screenshot 7](https://raw.githubusercontent.com/Debojit-mitra/async.ai/master/Screenshots/7.jpg) | 
-
-<video width="400" controls>
-  <source src="https://github.com/Debojit-mitra/async.ai/raw/master/Screenshots/chat_with_expert.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+| ![Screenshot 7](https://raw.githubusercontent.com/Debojit-mitra/async.ai/master/Screenshots/7.jpg) | ![Screenshot 8](https://raw.githubusercontent.com/Debojit-mitra/async.ai/master/Screenshots/chat_with_expert.gif) |
 
 ## 🧐 Features
 
