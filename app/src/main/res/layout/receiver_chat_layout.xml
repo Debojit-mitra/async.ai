@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="12dp">
+
+    <TextView
+        android:id="@+id/textView_receiverRoleAndName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u0040Admin : Debojit"
+        android:textColor="@color/mode"
+        android:textSize="14sp"
+        android:layout_margin="3dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:background="@drawable/receiver_chat"
+        android:layout_below="@+id/textView_receiverRoleAndName"
+        android:id="@+id/layoutForMessage"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/textView_receiverMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receiver Message will display here"
+            android:textColor="@color/mode"
+            android:textSize="15sp"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="3dp"
+            android:textIsSelectable="true"
+            />
+        <TextView
+            android:id="@+id/textView_receiverMessage_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20:08"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/mode"
+            android:textSize="12sp"
+            android:alpha="0.5"
+            android:padding="7dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_for_typing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_receiverRoleAndName"
+        android:visibility="visible"
+        android:background="@drawable/receiver_chat"
+        android:gravity="center_vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/textView_typing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Typing"
+            android:textColor="@color/mode"
+            android:textSize="15sp"
+            android:padding="10dp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/login_animationView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="-5dp"
+            android:layout_marginBottom="5dp"
+            app:lottie_fileName="typing.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_notSatisfied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/not_satisfied"
+        android:layout_below="@id/layoutForMessage"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textSize="12sp" />
+
+</RelativeLayout>

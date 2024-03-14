@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!--My colours-->
+    <color name="mode">#1d1d1d</color>
+    <color name="mode_inverse">#FFFFFF</color>
+    <color name="mode_red">#9199E0</color>
+    <color name="mode_red_Extra">#6A5FA8</color>
+    <color name="ripple_effect">#31000000</color>
+    <color name="green">#41D600</color>
+    <color name="red">#FF0000</color>
+    <color name="mode_inverse_extra">#E3E3E3</color>
+    <color name="mode_extra">#2B2B2B</color>
+
+
+
+
+    <!--imagepicker-->
+    <color name="ucrop_color_toolbar">@color/mode_inverse</color>
+    <color name="ucrop_color_statusbar">@color/mode_inverse</color>
+    <color name="ucrop_color_widget_active">@color/mode_red</color>
+    <color name="ucrop_color_toolbar_widget">@color/mode</color>
+    <color name="dialog_choose_icon_color">@color/mode</color>
+    <color name="dialog_choose_text_color">@color/mode</color>
+    <!--imagepicker-->
+
+</resources>

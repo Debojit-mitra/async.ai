@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mode_inverse"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.SplashActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        android:contentDescription="@string/splash_screen_logo"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/app_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/mode"
+        android:visibility="invisible"
+        />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="12dp">
+
+    <TextView
+        android:id="@+id/textView_receiverRoleAndName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:text="\u0040async.aiBot"
+        android:textColor="@color/mode"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:background="@drawable/receiver_chat"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/textView_receiverRoleAndName"
+        android:id="@+id/layoutForMessage">
+
+        <TextView
+            android:id="@+id/textView_receiverMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Typing"
+            android:textColor="@color/mode"
+            android:textSize="15sp"
+            android:padding="10dp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/login_animationView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="-5dp"
+            android:layout_marginBottom="5dp"
+            app:lottie_fileName="typing.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/mode_inverse"
+    >
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/custom_animationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_fileName="account_created.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:id="@+id/custom_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_animationView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/mode"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_textview"
+        android:gravity="center"
+        >
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:textSize="12sp"
+        android:textColor="@color/mode"
+        style="?android:attr/borderlessButtonStyle"
+        android:visibility="gone"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        />
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textSize="12sp"
+        android:textColor="@color/mode"
+        style="?android:attr/borderlessButtonStyle"
+        android:visibility="gone"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:progressTint="@color/mode_red"
+        android:elevation="5dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>

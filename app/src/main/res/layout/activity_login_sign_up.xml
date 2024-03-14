@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mode_inverse"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".activities.LoginSignUpActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/login_animationView"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="-82dp"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false" />
+
+    <TextView
+        android:id="@+id/textView_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_to_get_started"
+        android:textColor="@color/mode"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_newUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/new_user_your_can_register_from_here_to"
+        android:textSize="15sp" />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_sign_in_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:progressTint="@color/mode_red"
+        android:elevation="5dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        />
+
+
+</LinearLayout>

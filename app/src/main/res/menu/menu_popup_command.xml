@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ask"
+        android:icon="@drawable/ic_round_ask_24"
+        android:iconTint="@color/mode_extra"
+        android:title="@string/ask"
+        tools:targetApi="o" />
+
+    <item
+        android:id="@+id/summarize"
+        android:icon="@drawable/ic_round_summarize_24"
+        android:iconTint="@color/mode_extra"
+        android:title="@string/summarize"
+        tools:targetApi="o" />
+
+<!--    <item
+        android:id="@+id/wiki"
+        android:icon="@drawable/ic_round_wiki_24"
+        android:iconTint="@color/mode_extra"
+        android:title="@string/wiki"
+        tools:targetApi="o" />-->
+
+    <item
+        android:id="@+id/Chat"
+        android:icon="@drawable/ic_round_wiki_24"
+        android:iconTint="@color/mode_extra"
+        android:title="@string/chat"
+        tools:targetApi="o" />
+
+</menu>

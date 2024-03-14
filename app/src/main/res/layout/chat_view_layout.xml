@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mode_inverse">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_identify_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:id="@+id/recyclerView_relative_chatViewbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mode_red"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/chatView_requestNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chat No. 1"
+                    android:textColor="@color/mode"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                   <!-- <ImageView
+                        android:id="@+id/tick_Sender"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:src="@drawable/ic_tick"
+                        android:alpha="0.4"
+                        android:visibility="gone"
+                        app:tint="@color/mode"
+                        />-->
+
+                    <TextView
+                        android:id="@+id/chatView_lastChat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Last Message"
+                        android:maxLines="1"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/chatView_lastChat_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="06:24"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+           <!-- <TextView
+                android:id="@+id/chatView_online_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="Online"
+                android:textSize="@dimen/_11sdp" />-->
+
+
+            <ProgressBar
+                android:id="@+id/progressBarBs"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

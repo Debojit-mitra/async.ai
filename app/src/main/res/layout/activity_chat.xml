@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mode_inverse"
+    tools:context=".activities.ChatActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/mode_inverse"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_chat_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/back_btn"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Chat No."
+                android:textColor="@color/mode"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_back"
+                android:contentDescription="@string/backButton"
+                app:tint="@color/mode"
+                android:background="@drawable/button_oval_ripple__effect"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/firstLayout"
+        android:layout_marginTop="-8dp"
+        android:layout_above="@+id/relative_bottom_area"
+        android:layout_marginBottom="-5dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relative_bottom_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="@color/mode_red"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/select_chat_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="2dp"
+                    android:text="!ask"
+                    android:maxLength="5"
+                    android:background="@drawable/button_oval_ripple__effect"
+                    android:backgroundTint="@color/mode_red"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/mode"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/divider1"
+                    android:layout_width="1dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="2dp"
+                     android:layout_toEndOf="@+id/select_chat_type"
+                    android:background="@color/mode"/>
+
+                <EditText
+                    android:id="@+id/editMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/chat_edittext"
+                    android:layout_toEndOf="@+id/divider1"
+                    android:layout_toStartOf="@+id/divider2"
+                    android:hint="@string/type_query_here"
+                    android:maxLines="1"
+                    android:padding="3dp" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="1dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toStartOf="@+id/main_chat_send_btn"
+                    android:background="@color/mode"/>
+
+                <ImageButton
+                    android:id="@+id/main_chat_send_btn"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/button_oval_ripple__effect"
+                    android:backgroundTint="@color/mode_red"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_round_send_24"
+                    app:tint="@color/mode"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        </RelativeLayout>
+
+
+</RelativeLayout>
