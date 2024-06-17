@@ -1,4 +1,5 @@
 # async.ai
+Welcome to async.ai, the AI chatbot designed to revolutionize the way you tackle computer science questions. Harnessing the power of state-of-the-art machine learning transformers, async.ai is trained extensively to understand and answer your computer science queries with precision and clarity. Machine Learning Model trained by **[Saeed](https://github.com/saeed0x1)**
 
 <p align="center">
   <img src="https://socialify.git.ci/Debojit-mitra/async.ai/image?description=1&amp;descriptionEditable=ML%20Transformer%20based%20Android%20GenAI&amp;logo=https%3A%2F%2Fraw.githubusercontent.com%2FDebojit-mitra%2Fasync.ai%2Fmaster%2FScreenshots%2Flogo.svg&amp;name=1&amp;pattern=Floating%20Cogs&amp;theme=Auto" alt="project-image">
