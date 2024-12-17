@@ -40,9 +40,10 @@ For android app:
 * Android Studio
 * Java
 * Figma
-* ngrok
 
-For generative model:
-* Python
+Generative model:
+* Transformers Model
+
+For Server:
+* Python3
 * Flask
-* Anaconda
