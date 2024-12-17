@@ -47,3 +47,7 @@ Generative model:
 For Server:
 * Python3
 * Flask
+
+# Collaborators
+- [Mortaza Behesti Al Saeed](https://github.com/saeed0xf)
+- [Debojit Mitra](https://github.com/Debojit-mitra)
